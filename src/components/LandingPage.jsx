@@ -13,11 +13,11 @@ import digi8 from "../assets/digi (8).png";
 import test1 from "../assets/test1.png";
 import emailBg from "../assets/email-bg.png";
 
-// import "../App.css"; // Assuming you have a global CSS file for Tailwind CSS
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-custom-image text-white">
+    {/* // <div className="space-y-28 py-12 mx-12 bg-custom-image text-white"> */}
       {/* Navigation */}
       <nav className="flex justify-between items-center py-4 px-8 lg:px-16 widthMargin">
         <div className="flex items-center gap-2">
@@ -56,9 +56,7 @@ const LandingPage = () => {
       </section>
 
       {/* Event Details Card */}
-   {/* <section className="py-100 bg-section1 lg:px-16 relative">
-  <div className="absolute top--50 left--50 w-52 h-52 bg-white"></div>
-</section> */}
+  
 
 <section className="py-100 bg-section1 lg:px-16 relative">
 <div className="bg-[#F5E9DE] text-black w-30 my-8 mx-8 rounded-2xl left-20 absolute flex justify-center items-center gap-2 px-4 py-2">
