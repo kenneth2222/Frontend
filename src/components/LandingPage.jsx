@@ -1,4 +1,7 @@
 import React from 'react';
+// import Navbar from './components/Navbar';
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 import { Icon } from "@iconify/react";
 import logo from "../assets/logo.png";
 import conf1  from "../assets/conf-image.png";
@@ -17,24 +20,21 @@ import emailBg from "../assets/email-bg.png";
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-custom-image text-white">
-    {/* // <div className="space-y-28 py-12 mx-12 bg-custom-image text-white"> */}
-      {/* Navigation */}
-      <nav className="flex justify-between items-center py-4 px-8 lg:px-16 widthMargin">
+      <Navbar />
+      {/* <nav className="flex justify-between items-center py-4 px-8 lg:px-16 widthMargin">
         <div className="flex items-center gap-2">
           <img src={logo} alt="Logo" className="h-10" />
           <h1 className="text-2xl font-bold">Web3GlobalConference</h1>
         </div>
         <div className="hidden md:flex space-x-8 text-2xl">
-          <a href="#" className="hover:text-purple-300">Home</a>
-          <a href="#" className="hover:text-purple-300">About</a>
-          <a href="#" className="hover:text-purple-300">Speakers</a>
-          <a href="#" className="hover:text-purple-300">Schedule</a>
-          <a href="#" className="hover:text-purple-300">Contact</a>
+        <Link to="/" className="hover:text-purple-300">Home</Link>
+    <Link to="/about" className="hover:text-purple-300">About</Link>
+    <Link to="/speakers" className="hover:text-purple-300">Speakers</Link>
+    <Link to="/schedule" className="hover:text-purple-300">Schedule</Link>
+    <Link to="/contact" className="hover:text-purple-300">Contact</Link>
         </div>
-        {/* <div>
-          <button className="px-4 py-2 bg-blue-500 rounded-full hover:bg-blue-600">Register</button>
-        </div> */}
-      </nav>
+        
+      </nav> */}
 
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row items-center justify-between py-16 px-8 lg:px-16 widthMargin relative">

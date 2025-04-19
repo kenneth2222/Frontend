@@ -10,6 +10,16 @@
     background-position: center;
   }
 
+
+  .bg-aboutHero-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('./assets/aboutHero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
+
   .widthMargin {
     margin: 0 30px;
     /* width: 100%; */
