@@ -1,5 +1,14 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import social from "../assets/socials.png";
+import digi1 from "../assets/digi (1).png";
+import digi2 from "../assets/digi (2).png";
+import digi3 from "../assets/digi (3).png";
+import digi4 from "../assets/digi (4).png";
+import digi5 from "../assets/digi (5).png";
+import digi6 from "../assets/digi (6).png";
+import digi7 from "../assets/digi (7).png";
+import digi8 from "../assets/digi (8).png";
 import section1 from "../assets/section1-img1.png";
 import section2 from "../assets/section1-img2.png";
 import section3 from "../assets/section1-img3.png";
@@ -7,6 +16,8 @@ import section4 from "../assets/section1-img4.png";
 import section5 from "../assets/section1-img5.png";
 import confLady from "../assets/test1.png";
 import Navbar from './Navbar';
+import Footer from './Footer';
+import SwiperPage from './swiper';
 
 const AboutPage = () => {
   return (
@@ -74,7 +85,7 @@ const AboutPage = () => {
     </div>
 
     {/* Section Three */}
-    <div className="flex justify-center items-center mx-auto h-1/2 w-3/4 bg-[#5A487A] rounded-3xl py-3 "> 
+    <div className="flex justify-center items-center mx-auto h-1/2 w-6/7 bg-[#5A487A] rounded-3xl py-3 "> 
       <div className="flex flex-col justify-between items-center pr-5 pl-2">
         <h2 className="text-4xl font-bold mb-3">Why Choose Web3 Global Conference LLC?</h2>
         <ul className="flex flex-col list-disc pl-10 mt-2 text-xl gap-4 gap-y-8">
@@ -92,8 +103,223 @@ const AboutPage = () => {
       </div>
     </div>
 
+    {/* Section Four */}
+      <div>
+        <h3 className="text-2xl font-bold mt-30 mb-6 ml-60">Sponsors and partners</h3>
+        <SwiperPage/>
+      </div>
 
+      <h3 className="text-2xl font-bold mt-30 mb-6 ml-60">From recent events</h3>
+      {/* Event Images Section One */}
+              <div className="flex h-60  mt-10 gap-3 mx-35 mb-20">
+                <div className="rounded-0">
+                  <img src={digi1} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi2} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi3} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi4} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+              </div>
+      {/* Event Images Section Two */}
+              <div className="flex h-60  mt-9 gap-3 mx-35 mb-20">
+                <div className="rounded-0">
+                  <img src={digi5} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi3} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi8} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi5} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+              </div>
+      {/* Event Images Section Three */}
+              <div className="flex h-60  mt-9 gap-3 mx-35 mb-20">
+                <div className="rounded-0">
+                  <img src={digi2} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi7} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi2} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi6} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+              </div>
+
+      {/* Event Images Section Four */}
+              <div className="flex h-60  mt-9 gap-3 mx-35 mb-30">
+                <div className="rounded-0">
+                  <img src={digi4} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi6} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi2} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+                <div className="rounded-0">
+                  <img src={digi5} alt="Logo" className="h-70 w-120" />
+                  <p className="text-lg font-normal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
+                    Title Of Video
+                    <Icon
+                      icon="line-md:hazard-lights-filled-loop"
+                      width="24"
+                      height="20"
+                      className="transform rotate-90"
+                    />
+                  </p>
+                </div>
+              </div>
+
+             
+              <Footer />
     </div>
+     
   );
 };
 
