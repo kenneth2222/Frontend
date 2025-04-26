@@ -6,7 +6,7 @@ const Navbar = ({ className }) => {
   return (
     <nav className={`flex justify-between items-center py-4 px-8 lg:px-16 widthMargin ${className}`}>
       <div className="flex items-center gap-2">
-        <img src={logo} alt="Logo" className="h-23" />
+        <Link to="/"> <img src={logo} alt="Logo" className="h-23 cursor-pointer" /></Link>
         <h1 className="text-2xl font-bold"></h1>
       </div>
       <div className="hidden md:flex space-x-8 text-2xl">

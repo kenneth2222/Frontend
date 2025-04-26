@@ -1,6 +1,7 @@
 import React from 'react';
 // import Navbar from './components/Navbar';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { Icon } from "@iconify/react";
 import logo from "../assets/logo.png";
@@ -14,26 +15,13 @@ import digi6 from "../assets/digi (6).png";
 import digi7 from "../assets/digi (7).png";
 import digi8 from "../assets/digi (8).png";
 import test1 from "../assets/test1.png";
+import SwiperHomePage from './SwiperHome';
 import emailBg from "../assets/email-bg.png";
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-custom-image text-white">
       <Navbar />
-      {/* <nav className="flex justify-between items-center py-4 px-8 lg:px-16 widthMargin">
-        <div className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="h-10" />
-          <h1 className="text-2xl font-bold">Web3GlobalConference</h1>
-        </div>
-        <div className="hidden md:flex space-x-8 text-2xl">
-        <Link to="/" className="hover:text-purple-300">Home</Link>
-    <Link to="/about" className="hover:text-purple-300">About</Link>
-    <Link to="/speakers" className="hover:text-purple-300">Speakers</Link>
-    <Link to="/schedule" className="hover:text-purple-300">Schedule</Link>
-    <Link to="/contact" className="hover:text-purple-300">Contact</Link>
-        </div>
-        
-      </nav> */}
 
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row items-center justify-between py-16 px-8 lg:px-16 widthMargin relative">
@@ -71,38 +59,7 @@ const LandingPage = () => {
       </section>
 
       {/* Event Details Card */}
-
-      <section className="py-100 bg-section1 lg:px-16 relative">
-        <div className="bg-[#F5E9DE] text-black w-30 my-8 mx-8 rounded-2xl left-20 absolute flex justify-center items-center gap-2 px-4 py-2">
-          <p className="text-2xl whitespace-nowrap">prev</p>
-          <Icon icon="akar-icons:arrow-left" width="24" height="18" />
-        </div>
-        <div className="bg-[#F5E9DE] text-black w-30 my-8 mx-8 rounded-2xl right-50 absolute flex justify-center items-center gap-2 px-4 py-2">
-          <Icon icon="akar-icons:arrow-right" width="24" height="18" />
-          <p className="text-2xl whitespace-nowrap">next</p>
-        </div>
-        <div className="absolute top-1/2 left-1/2 w-130 h-110 rounded-3xl bg-white transform -translate-x-120 -translate-y-1/2 ">
-          <div className="bg-[#F5E9DE] text-black w-40 my-8 mx-8 rounded-2xl">
-            <p className="py-4 text-center whitespace-nowrap">
-              Up Comming Event
-            </p>
-          </div>
-          <div className="text-black my-8 mx-8 ">
-            <p className="text-5xl font-bold mb-5">Web 3 Global Conference</p>
-            <p className="text-2xl font-normal">
-              Uniting leading experts from diverse industries on a global scale
-            </p>
-          </div>
-          <div className="flex ">
-            <div className="bg-black w-40 my-8 mx-8 rounded-2xl">
-              <p className="py-4 text-center whitespace-nowrap">Book Ticket</p>
-            </div>
-            <div className="bg-[#F5E9DE] text-black w-40 my-8 mx-8 rounded-2xl">
-              <p className="py-4 text-center whitespace-nowrap">Learn More</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SwiperHomePage />
 
       {/* Featured Speakers */}
       <section className="py-16 px-8 lg:px-16 widthMargin">
@@ -171,7 +128,7 @@ const LandingPage = () => {
             pellentesque enim. Scelerisque ultrices morbi porttitor leo proin
             dignissim est. Amet et sapien volutpat eu aliquam.
           </p>
-          <div className="text-2xl rounded-3xl border w-40 border-white flex items-center">
+          <div className="text-2xl rounded-3xl border w-40 border-white flex items-center  cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out hover:scale-105">
             <p className="my-0 px-2 font-normal">More Videos</p>
           </div>
         </div>
@@ -335,58 +292,8 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white">
-        <div className=" lg:px-16 h-70 mx-20 flex justify-between items-center">
-          <div>
-            <p className="text-black text-xl font-bold mb-4">Follow us</p>
-            <div className="flex gap-4 mt-2 mb-7">
-              <Icon
-                icon="akar-icons:facebook-fill"
-                width="24"
-                height="24"
-                className="mr-4 bg-black"
-              />
-              <Icon
-                icon="akar-icons:twitter-fill"
-                width="24"
-                height="24"
-                className="mr-4 bg-black"
-              />
-              <Icon
-                icon="akar-icons:linkedin-fill"
-                width="24"
-                height="24"
-                className="mr-4 bg-black"
-              />
-              <Icon
-                icon="akar-icons:instagram-fill"
-                width="24"
-                height="24"
-                className="mr-4 bg-black"
-              />
-            </div>
-            <p className="text-black text-xl">
-              ©{new Date().getFullYear()} W3GC by Web Global Conference LLC. All
-              rights reserved. <br />
-              <span className="underline">Privacy Policy</span> &{" "}
-              <span className="underline">Terms of Use</span>
-            </p>
-          </div>
-
-          <div className="h-40 w-120  mt-10 mb-10 footerEmail mx-0 px-0 flex flex-col justify-center items-center gap-2">
-            <p className="ml-72">
-              get the <span className="font-bold">latest news</span> as then
-              coming{" "}
-            </p>
-            <div className="bg-[#F5E9DE] h-15 w-140 rounded-3xl flex justify-between items-center px-6">
-              <p className="text-black text-xl">Email</p>
-              <div className="bg-black h-10 w-30 rounded-3xl flex justify-center items-center">
-                Subscribe
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      <Footer />
     </div>
   );
 };

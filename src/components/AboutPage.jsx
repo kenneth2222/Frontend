@@ -17,7 +17,7 @@ import section5 from "../assets/section1-img5.png";
 import confLady from "../assets/test1.png";
 import Navbar from './Navbar';
 import Footer from './Footer';
-import SwiperPage from './swiper';
+import SwiperAboutPage from './SwiperAbout';
 
 const AboutPage = () => {
   return (
@@ -106,7 +106,7 @@ const AboutPage = () => {
     {/* Section Four */}
       <div>
         <h3 className="text-2xl font-bold mt-30 mb-6 ml-60">Sponsors and partners</h3>
-        <SwiperPage/>
+        <SwiperAboutPage/>
       </div>
 
       <h3 className="text-2xl font-bold mt-30 mb-6 ml-60">From recent events</h3>
