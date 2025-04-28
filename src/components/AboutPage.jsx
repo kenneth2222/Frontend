@@ -9,15 +9,16 @@ import digi5 from "../assets/digi (5).png";
 import digi6 from "../assets/digi (6).png";
 import digi7 from "../assets/digi (7).png";
 import digi8 from "../assets/digi (8).png";
-import section1 from "../assets/section1-img1.png";
-import section2 from "../assets/section1-img2.png";
-import section3 from "../assets/section1-img3.png";
-import section4 from "../assets/section1-img4.png";
-import section5 from "../assets/section1-img5.png";
+// import section1 from "../assets/section1-img1.png";
+// import section2 from "../assets/section1-img2.png";
+// import section3 from "../assets/section1-img3.png";
+// import section4 from "../assets/section1-img4.png";
+// import section5 from "../assets/section1-img5.png";
 import confLady from "../assets/test1.png";
 import Navbar from './Navbar';
 import Footer from './Footer';
 import SwiperAboutPage from './SwiperAbout';
+import SectionTwo from './SectionTwoAboutPage';
 
 const AboutPage = () => {
   return (
@@ -44,7 +45,8 @@ const AboutPage = () => {
       </div>
 
     {/* Section Two */}
-    <div className="flex justify-center items-center">
+    <SectionTwo />
+    {/* <div className="flex justify-center items-center">
       <div className="flex justify-center items-center my-5 gap-4">
         <div className="flex flex-col gap-2 ">
             <div className="flex gap-5 items-center bg-[#5A487A] rounded-3xl py-3 pr-5 pl-4">
@@ -82,7 +84,7 @@ const AboutPage = () => {
         </div>
 
         </div>
-    </div>
+    </div> */}
 
     {/* Section Three */}
     <div className="flex justify-center items-center mx-auto h-1/2 w-6/7 bg-[#5A487A] rounded-3xl py-3 "> 
