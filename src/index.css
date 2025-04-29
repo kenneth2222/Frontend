@@ -60,14 +60,14 @@
 }
 
 .bg-section2 {
-    background-image: url('./assets/bg-section2.jpg');
+    background-image: url('./assets/coin2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-section3 {
-    background-image: url('./assets/bg-section3.jpg');
+    background-image: url('./assets/coin2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
