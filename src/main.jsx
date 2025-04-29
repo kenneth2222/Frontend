@@ -9,8 +9,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<SponsorSignup />} />
-   
-
       </Routes>
     </Router>
   </React.StrictMode>
