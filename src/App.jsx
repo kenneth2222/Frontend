@@ -1,10 +1,10 @@
 import React from 'react';
-import LandingPage from './components/LandingPage';
+import Signup from './components/Signup';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Signup />
     </div>
   );
 }
