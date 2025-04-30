@@ -32,7 +32,7 @@ const Navbar = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`flex justify-between items-center py-4 px-8 lg:px-16 widthMargin ${className}`}>
+    <nav className={`flex justify-between items-center py-4 px-8 lg:px-16 widthMargin ${className} relative z-[100]`}>
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Link to="/">
@@ -42,7 +42,7 @@ const Navbar = ({ className }) => {
 
       {/* Large Screen Nav */}
       <div className="hidden lg:flex space-x-8 text-2xl">
-        <Link to="/" className="hover:text-purple-300">Home</Link>
+        <Link to="/" className="hover:text-purple-300 cursor-pointer">Home</Link>
         <Link to="/about" className="hover:text-purple-300">About</Link>
         <Link to="/speakers" className="hover:text-purple-300">Speakers</Link>
         <Link to="/schedule" className="hover:text-purple-300">Schedule</Link>

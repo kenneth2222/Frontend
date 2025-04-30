@@ -29,12 +29,14 @@
   .worldLogo1 {
     background-image: url('./assets/world.png');
     background-repeat: no-repeat;
+    background-size: contain;
     left: -30px;
   }
   
   .worldLogo {
   background-image: url('./assets/imageNew.png');
   background-size: cover;
+  /* background-size: contain; */
   background-position: center;
   background-repeat: no-repeat; 
   position: absolute;  
