@@ -132,19 +132,79 @@ function SectionTwoAboutPage() {
   const visibleSections = sections.slice(startIndex, startIndex + visibleCount);
 
 return (
-    <div className="flex justify-center items-center py-15">
-      <div className="flex justify-center items-center my-5 gap-4">
+  //   <div className="flex justify-center items-center py-15">
+  //     <div className="flex justify-center items-center my-5 gap-4">
 
+  //       {/* Left Side */}
+  //       <div className="flex flex-col gap-2">
+
+  //         {/* Up Arrow */}
+  //         <div className="flex justify-center">
+  //         {startIndex > 0 && ( // Only show if not at the top
+  //   <button onClick={handleUp} className="text-white text-2xl cursor-pointer">
+  //     <FaChevronUp />
+  //   </button>
+  // )}
+  //         </div>
+
+  //         {/* Carousel Items */}
+  //         {visibleSections.map((item, index) => {
+  //           const realIndex = startIndex + index;
+  //           return (
+  //             <div
+  //               key={realIndex}
+  //               onClick={() => setSelectedIndex(realIndex)}
+  //               className={`flex gap-5 items-center bg-[#5A487A] rounded-3xl py-3 pr-5 pl-4 cursor-pointer ${selectedIndex === realIndex ? 'border-2 border-white' : ''}`}
+  //             >
+  //               <img src={item.image} alt="" className="w-40 h-30" />
+  //               <p className="pr-20 text-xl font-bold">{item.title}</p>
+  //             </div>
+  //           );
+  //         })}
+
+  //         {/* Down Arrow */}
+  //         <div className="flex justify-center">
+  //         {startIndex + visibleCount < sections.length && ( // Only show if not at the bottom
+  //   <button onClick={handleDown} className="text-white text-2xl cursor-pointer">
+  //     <FaChevronDown />
+  //   </button>
+  // )}
+  //         </div>
+
+  //       </div>
+
+  //       {/* Right Side */}
+  //       <div className="flex flex-col justify-between items-center gap-y-8 pr-5 pl-2">
+  //         <div className="w-full mb-2">
+  //           <img src={selectedSection.image} alt="" className="w-full h-[450px] rounded-none" />
+  //         </div>
+  //         <div>
+  //           <p className="text-2xl font-bold text-wrap">
+  //             We organize world-class events that bring together the Web3 community, <br />
+  //             thought leaders, and innovators.
+  //           </p>
+  //           <ul className="list-disc pl-10 mt-2 text-xl">
+  //             <li>Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over <br />1000 attendees.</li>
+  //             <li>Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire <br />blockchain enthusiasts.</li>
+  //             <li>Customized Event Solutions: Tailor event management services for corporate clients, startups, <br />and ecosystems.</li>
+  //           </ul>
+  //         </div>
+  //       </div>
+
+  //     </div>
+  //   </div>
+
+  <div className="flex justify-center items-center py-10 px-4">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 w-full max-w-7xl">
         {/* Left Side */}
         <div className="flex flex-col gap-2">
-
           {/* Up Arrow */}
           <div className="flex justify-center">
-          {startIndex > 0 && ( // Only show if not at the top
-    <button onClick={handleUp} className="text-white text-2xl cursor-pointer">
-      <FaChevronUp />
-    </button>
-  )}
+            {startIndex > 0 && (
+              <button onClick={handleUp} className="text-white text-2xl cursor-pointer">
+                <FaChevronUp />
+              </button>
+            )}
           </div>
 
           {/* Carousel Items */}
@@ -154,43 +214,60 @@ return (
               <div
                 key={realIndex}
                 onClick={() => setSelectedIndex(realIndex)}
-                className={`flex gap-5 items-center bg-[#5A487A] rounded-3xl py-3 pr-5 pl-4 cursor-pointer ${selectedIndex === realIndex ? 'border-2 border-white' : ''}`}
+                className={`flex gap-3 items-center bg-[#5A487A] rounded-3xl py-3 px-4 cursor-pointer ${
+                  selectedIndex === realIndex ? 'border-2 border-white' : ''
+                }`}
               >
-                <img src={item.image} alt="" className="w-40 h-30" />
-                <p className="pr-20 text-xl font-bold">{item.title}</p>
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-24 h-20 sm:w-32 sm:h-24 md:w-36 md:h-28 lg:w-40 lg:h-30 object-cover"
+                />
+                <p className="text-md sm:text-lg md:text-xl font-bold">{item.title}</p>
               </div>
             );
           })}
 
           {/* Down Arrow */}
           <div className="flex justify-center">
-          {startIndex + visibleCount < sections.length && ( // Only show if not at the bottom
-    <button onClick={handleDown} className="text-white text-2xl cursor-pointer">
-      <FaChevronDown />
-    </button>
-  )}
+            {startIndex + visibleCount < sections.length && (
+              <button onClick={handleDown} className="text-white text-2xl cursor-pointer">
+                <FaChevronDown />
+              </button>
+            )}
           </div>
-
         </div>
 
         {/* Right Side */}
-        <div className="flex flex-col justify-between items-center gap-y-8 pr-5 pl-2">
+        <div className="flex flex-col justify-between items-center gap-y-6 w-full lg:w-2/3">
           <div className="w-full mb-2">
-            <img src={selectedSection.image} alt="" className="w-full h-[450px] rounded-none" />
+            <img
+              src={selectedSection.image}
+              alt=""
+              className="w-full h-auto max-h-[300px] sm:max-h-[350px] md:max-h-[400px] lg:max-h-[450px] object-cover"
+            />
           </div>
-          <div>
-            <p className="text-2xl font-bold text-wrap">
+          <div className="px-2 sm:px-4 lg:px-0">
+            <p className="text-lg sm:text-xl md:text-2xl font-bold text-center lg:text-left">
               We organize world-class events that bring together the Web3 community, <br />
               thought leaders, and innovators.
             </p>
-            <ul className="list-disc pl-10 mt-2 text-xl">
-              <li>Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over <br />1000 attendees.</li>
-              <li>Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire <br />blockchain enthusiasts.</li>
-              <li>Customized Event Solutions: Tailor event management services for corporate clients, startups, <br />and ecosystems.</li>
+            <ul className="list-disc pl-6 sm:pl-10 mt-3 text-base sm:text-lg md:text-xl">
+              <li>
+                Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over <br />
+                1000 attendees.
+              </li>
+              <li>
+                Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire <br />
+                blockchain enthusiasts.
+              </li>
+              <li>
+                Customized Event Solutions: Tailor event management services for corporate clients, startups, <br />
+                and ecosystems.
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   );

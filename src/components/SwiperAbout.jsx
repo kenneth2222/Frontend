@@ -59,14 +59,14 @@ export default function App() {
       </Swiper>
 
       {/* Custom navigation buttons */}
-      <div
+      {/* <div
         ref={(node) => setPrevEl(node)}
-        className="swiper-button-prev text-black absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
+        className="hidden swiper-button-prev text-black absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
       ></div>
       <div
         ref={(node) => setNextEl(node)}
         className="swiper-button-next text-black absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
-      ></div>
+      ></div> */}
     </div>
   );
 }
