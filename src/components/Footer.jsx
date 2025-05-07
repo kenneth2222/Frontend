@@ -1,8 +1,39 @@
 import React from 'react';
+import { useState } from 'react';
 import { Icon } from "@iconify/react";
-import { SVGProps } from 'react';
+// import { SVGProps } from 'react';
 
 const Footer = () => {
+
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = async () => {
+    if (!email || !email.includes("@")) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        alert("Subscribed successfully!");
+        setEmail("");
+      } else {
+        alert("Subscription failed. Try again.");
+      }
+    } catch (err) {
+      console.error("Error subscribing:", err);
+      alert("An error occurred. Please try again later.");
+    }
+  };
+
   return (
 <footer className="bg-white md:px-2">
         <div className="lg:px-16 h-50 mx-5 lg:flex lg:flex-row flex-col justify-between items-center ">
@@ -10,17 +41,16 @@ const Footer = () => {
 
   {/* This is only visible in small screens */}
   <div className="sm:flex md:flex lg:hidden w-90 lg:h-40 lg:w-120 mt-10 mb-10 mx-0 px-0 flex-col justify-center items-center gap-2 md:translate-x-90 md:-mb-15">
-  {/* <p className="hidden lg:ml-72">
-    get the <span className="font-bold">latest news</span> as then
-    coming
-  </p> */}
+
   <div className="bg-[#F5E9DE] h-15 w-90 lg:h-15 lg:w-140 rounded-3xl flex lg:justify-between items-center px-6">
     <input
       type="email"
       placeholder="Enter your email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
       className="bg-transparent outline-none text-black text-xl lg:flex-1 lg:mr-4 "
     />
-    <button className="bg-black text-white h-10 px-3 rounded-3xl lg:flex justify-center items-center">
+    <button onClick={handleSubscribe} className="bg-black text-white h-10 px-3 rounded-3xl lg:flex justify-center items-center">
       Subscribe
     </button>
   </div>
@@ -75,9 +105,11 @@ const Footer = () => {
     <input
       type="email"
       placeholder="Enter your email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
       className="bg-transparent outline-none text-black text-xl lg:flex-1 lg:mr-4 "
     />
-    <button className="bg-black text-white h-10 px-6 rounded-3xl lg:flex justify-center items-center">
+    <button  onClick={handleSubscribe} className="bg-black text-white h-10 px-6 rounded-3xl lg:flex justify-center items-center">
       Subscribe
     </button>
   </div>
