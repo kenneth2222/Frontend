@@ -19,7 +19,7 @@ const Navbar = ({ className }) => {
       <div className="hidden lg:flex space-x-8 text-2xl">
         <Link to="/" className="hover:text-purple-300 cursor-pointer">Home</Link>
         <Link to="/about" className="hover:text-purple-300">About</Link>
-        <Link to="/speakers" className="hover:text-purple-300">Speakers</Link>
+        <Link to="/sponsor" className="hover:text-purple-300">Sponsor</Link>
         <Link to="/schedule" className="hover:text-purple-300">Schedule</Link>
         <Link to="/contact" className="hover:text-purple-300">Contact</Link>
       </div>
