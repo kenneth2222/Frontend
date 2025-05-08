@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import image from "../assets/WBGC.png";
+import image from "../assets/Sponsor.jpg";
 import FaqAccordion from './FaqAccordion';
 
 
@@ -10,7 +10,7 @@ const SponsorPage = () => {
       <div className="min-h-screen bg-custom-image text-white">
         <Navbar />
   
-        <div className="flex flex-col lg:flex-row items-stretch justify-center px-4 sm:px-6 md:px-10 lg:px-12 xl:px-20 2xl:px-32 py-10 gap-10 max-w-screen-2xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-stretch justify-center px-4 sm:px-6 md:px-10 lg:px-12 xl:px-20 2xl:px-32 py-10 gap-10 max-w-screen-3xl mx-auto">
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
             <img
