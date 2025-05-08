@@ -110,9 +110,9 @@ const sections = [
 ];
 
 function SectionTwoAboutPage() {
-  const [selectedIndex, setSelectedIndex] = useState(0); // Initially select the first one
-  const [startIndex, setStartIndex] = useState(0); // For visible slice
-  const visibleCount = 5; // How many to show at once
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [startIndex, setStartIndex] = useState(0); 
+  const visibleCount = 5; 
 
   const selectedSection = sections[selectedIndex];
 
@@ -132,68 +132,7 @@ function SectionTwoAboutPage() {
   const visibleSections = sections.slice(startIndex, startIndex + visibleCount);
 
 return (
-  //   <div className="flex justify-center items-center py-15">
-  //     <div className="flex justify-center items-center my-5 gap-4">
-
-  //       {/* Left Side */}
-  //       <div className="flex flex-col gap-2">
-
-  //         {/* Up Arrow */}
-  //         <div className="flex justify-center">
-  //         {startIndex > 0 && ( // Only show if not at the top
-  //   <button onClick={handleUp} className="text-white text-2xl cursor-pointer">
-  //     <FaChevronUp />
-  //   </button>
-  // )}
-  //         </div>
-
-  //         {/* Carousel Items */}
-  //         {visibleSections.map((item, index) => {
-  //           const realIndex = startIndex + index;
-  //           return (
-  //             <div
-  //               key={realIndex}
-  //               onClick={() => setSelectedIndex(realIndex)}
-  //               className={`flex gap-5 items-center bg-[#5A487A] rounded-3xl py-3 pr-5 pl-4 cursor-pointer ${selectedIndex === realIndex ? 'border-2 border-white' : ''}`}
-  //             >
-  //               <img src={item.image} alt="" className="w-40 h-30" />
-  //               <p className="pr-20 text-xl font-bold">{item.title}</p>
-  //             </div>
-  //           );
-  //         })}
-
-  //         {/* Down Arrow */}
-  //         <div className="flex justify-center">
-  //         {startIndex + visibleCount < sections.length && ( // Only show if not at the bottom
-  //   <button onClick={handleDown} className="text-white text-2xl cursor-pointer">
-  //     <FaChevronDown />
-  //   </button>
-  // )}
-  //         </div>
-
-  //       </div>
-
-  //       {/* Right Side */}
-  //       <div className="flex flex-col justify-between items-center gap-y-8 pr-5 pl-2">
-  //         <div className="w-full mb-2">
-  //           <img src={selectedSection.image} alt="" className="w-full h-[450px] rounded-none" />
-  //         </div>
-  //         <div>
-  //           <p className="text-2xl font-bold text-wrap">
-  //             We organize world-class events that bring together the Web3 community, <br />
-  //             thought leaders, and innovators.
-  //           </p>
-  //           <ul className="list-disc pl-10 mt-2 text-xl">
-  //             <li>Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over <br />1000 attendees.</li>
-  //             <li>Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire <br />blockchain enthusiasts.</li>
-  //             <li>Customized Event Solutions: Tailor event management services for corporate clients, startups, <br />and ecosystems.</li>
-  //           </ul>
-  //         </div>
-  //       </div>
-
-  //     </div>
-  //   </div>
-
+ 
   <div className="flex justify-center items-center py-10 px-4">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-6 w-full max-w-7xl">
         {/* Left Side */}

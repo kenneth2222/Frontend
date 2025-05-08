@@ -1,8 +1,6 @@
 import React from 'react';
-// import Navbar from './components/Navbar';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import { Icon } from "@iconify/react";
 import logo from "../assets/logo.png";
 import conf1 from "../assets/conf-image.png";
@@ -16,7 +14,6 @@ import digi7 from "../assets/digi (7).png";
 import digi8 from "../assets/digi (8).png";
 import test1 from "../assets/test1.png";
 import SwiperHomePage from './SwiperHome';
-import emailBg from "../assets/email-bg.png";
 
 const LandingPage = () => {
   return (
@@ -243,42 +240,7 @@ const LandingPage = () => {
               />
             </p>
           </div>
-          {/* <div className="rounded-0 mb-3">
-            <img src={digi6} alt="Logo" className="h-70 w-120" />
-            <p className="text-lg font-nomal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
-              Title Of Video
-              <Icon
-                icon="line-md:hazard-lights-filled-loop"
-                width="24"
-                height="20"
-                className="transform rotate-90"
-              />
-            </p>
-          </div>
-          <div className="rounded-0 mb-3">
-            <img src={digi7} alt="Logo" className="h-70 w-120" />
-            <p className="text-lg font-nomal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
-              Title Of Video
-              <Icon
-                icon="line-md:hazard-lights-filled-loop"
-                width="24"
-                height="20"
-                className="transform rotate-90"
-              />
-            </p>
-          </div>
-          <div className="rounded-0">
-            <img src={digi8} alt="Logo" className="h-70 w-120" />
-            <p className="text-lg font-nomal bg-[#5A487A] my-0.5 pl-2 flex items-center justify-between pr-4">
-              Title Of Video
-              <Icon
-                icon="line-md:hazard-lights-filled-loop"
-                width="24"
-                height="20"
-                className="transform rotate-90"
-              />
-            </p>
-          </div> */}
+        
         </div>
       </section>
 

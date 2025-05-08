@@ -57,16 +57,6 @@ export default function App() {
         <SwiperSlide><img src={partner16} alt="" /></SwiperSlide>
         <SwiperSlide><img src={partner17} alt="" /></SwiperSlide>
       </Swiper>
-
-      {/* Custom navigation buttons */}
-      {/* <div
-        ref={(node) => setPrevEl(node)}
-        className="hidden swiper-button-prev text-black absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
-      ></div>
-      <div
-        ref={(node) => setNextEl(node)}
-        className="swiper-button-next text-black absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
-      ></div> */}
     </div>
   );
 }
