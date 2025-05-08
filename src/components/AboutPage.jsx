@@ -113,7 +113,7 @@ const AboutPage = () => {
 </div>
 
       
-              <Footer />
+              <Footer className="bg-white"/>
     </div>
      
   );

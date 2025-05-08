@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
 
 
 const FaqAccordion = () => {
@@ -43,16 +44,23 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto mt-8 text-black">
+    // <div className="w-full max-w-3xl mx-auto mt-8 text-black">
+    <div className="w-[1220px] mx-auto mt-8 text-black pb-10">
       <h2 className="text-2xl font-bold text-center mb-6">Sponsorship FAQ</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="mb-4 border-b border-gray-300">
+            
           <button
             onClick={() => toggleAccordion(index)}
             className="w-full text-left px-4 py-3 text-lg font-medium bg-gray-100 hover:bg-gray-200 transition"
           >
+            <div className="flex justify-between items-center ">
             {faq.question}
+            <Icon icon="icons8:angle-down" width="22" height="22" />
+            </div>
           </button>
+          {/* <Icon icon="icons8:angle-down" width="32" height="32" /> */}
+          
           {openIndex === index && (
             <div className="px-4 py-3 text-gray-700 bg-gray-50">
               {faq.answer}

@@ -70,7 +70,7 @@ const SponsorPage = () => {
   <div className="flex flex-col sm:flex-row gap-4 items-center">
     <input
       type="email"
-      placeholder="Enter Your Email Address"
+      placeholder="Enter your email address"
       className="w-[550px] p-3 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500 text-xl placeholder:text-xl bg-[#f5f5f5]"
       required
     />
@@ -93,7 +93,9 @@ const SponsorPage = () => {
   <FaqAccordion />
 </div>
 
-<Footer />
+{/* <Footer className="bg-[#f5f5f5]"/> */}
+<Footer className="border-t border-gray-300 pt-8 bg-gradient-to-b from-[#f5f5f5] to-white"/>
+
 
 
 

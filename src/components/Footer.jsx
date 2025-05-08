@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Icon } from "@iconify/react";
 // import { SVGProps } from 'react';
 
-const Footer = () => {
+const Footer = ({ className }) => {
 
   const [email, setEmail] = useState("");
 
@@ -35,7 +35,7 @@ const Footer = () => {
   };
 
   return (
-<footer className="bg-white md:px-2">
+<footer className={`md:px-2 ${className}`}>
         <div className="lg:px-16 h-50 mx-5 lg:flex lg:flex-row flex-col justify-between items-center ">
 
 

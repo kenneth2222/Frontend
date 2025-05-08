@@ -317,7 +317,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       
-      <Footer />
+      <Footer className="bg-white"/>
     </div>
   );
 };
