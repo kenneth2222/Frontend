@@ -21,8 +21,8 @@ const Navbar = ({ className }) => {
         <Link to="/" className="hover:text-purple-300 cursor-pointer">Home</Link>
         <Link to="/about" className="hover:text-purple-300">About</Link>
         <Link to="/sponsor" className="hover:text-purple-300">Sponsor</Link>
-        <Link to="/schedule" className="hover:text-purple-300">Schedule</Link>
-        <Link to="/contact" className="hover:text-purple-300">Contact</Link>
+        <Link to="/events" className="hover:text-purple-300">Events</Link>
+        {/* <Link to="/contact" className="hover:text-purple-300">Contact</Link> */}
       </div>
 
       {/* Mobile Menu Icon */}
@@ -42,7 +42,7 @@ const Navbar = ({ className }) => {
           <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-purple-300">About</Link>
           <Link to="/sponsor" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Sponsor</Link>
-          <Link to="/schedule" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Schedule</Link>
+          <Link to="/events" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Events</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Contact</Link>
         </div>
       )}
