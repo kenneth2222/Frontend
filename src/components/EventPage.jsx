@@ -35,8 +35,8 @@ const AboutPage = () => {
 
     {/* Title and Description */}
     <div className="text-black text-center md:text-left">
-      <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-5">Web 3 Global Conference</p>
-      <p className="text-sm md:text-lg font-normal">
+      <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-5 lg:text-4xl">Web 3 Global Conference</p>
+      <p className="text-sm md:text-lg lg:text-xl font-normal">
         Uniting leading experts from diverse industries on a global scale
       </p>
     </div>
