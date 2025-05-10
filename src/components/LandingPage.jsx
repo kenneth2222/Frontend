@@ -22,7 +22,6 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row justify-between py-8 lg:py-16 px-8 lg:px-16 widthMargin relative">
-      {/* <div className="relative w-0 h-0 2xl:absolute 2xl:w-[1040px] 2xl:h-[740px] lineImage"></div> */}
         <div className=" relative 2xl:w-[1040px] 2xl:h-[740px] w-0 h-0 lineImage"></div>
         <div className="w-full lg:mb-0 2xl:ml-20"> 
           <h1 className="text-2xl md:text-4xl lg:text-6xl 2xl:text-8xl font-bold mb-6">

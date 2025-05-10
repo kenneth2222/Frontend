@@ -1,13 +1,12 @@
 import React from 'react';
 import { useState } from "react";
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import section1 from "../assets/conf-image.png";
 import section2 from "../assets/test1.png";
 import section3 from "../assets/image15.png";
 import section4 from "../assets/image16.png";
-import section5 from "../assets/section1-img1.png";
-import section6 from "../assets/section1-img2.png";
-import section7 from "../assets/section1-img5.png";
+// import section5 from "../assets/section1-img1.png";
+// import section6 from "../assets/section1-img2.png";
+// import section7 from "../assets/section1-img5.png";
 
 const sections = [
   {
@@ -69,48 +68,50 @@ const sections = [
       </>
     ),
   },
-  {
-    image: section5,
-    title: "Tokenomics Design",
-    description: (
-      <>
-        <p>Strategically crafting token models that drive sustainability and growth in Web3 ecosystems.</p>
-        <ul className="list-disc pl-10 mt-2 text-xl">
-          <li>Initial Token Distribution Strategies</li>
-          <li>Incentive Mechanisms</li>
-          <li>Governance Models</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    image: section6,
-    title: "Web3 Marketing and Community Building",
-    description: (
-      <>
-        <p>Helping blockchain projects grow by engaging and nurturing vibrant communities worldwide.</p>
-        <ul className="list-disc pl-10 mt-2 text-xl">
-          <li>Social Media Campaigns</li>
-          <li>Ambassador Programs</li>
-          <li>Content Creation</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    image: section7,
-    title: "Blockchain/Web3 Event Management",
-    description: (
-      <>
-        <p>We organize world-class events that bring together the Web3 community, thought leaders, and innovators.</p>
-        <ul className="list-disc pl-10 mt-2 text-xl">
-          <li>Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over 1000 attendees.</li>
-          <li>Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire blockchain enthusiasts.</li>
-          <li>Customized Event Solutions: Tailor event management services for corporate clients, startups, and ecosystems.</li>
-        </ul>
-      </>
-    ),
-  },
+
+  // Uncomment the following sections if there's a need to add more items
+  // {
+  //   image: section5,
+  //   title: "Tokenomics Design",
+  //   description: (
+  //     <>
+  //       <p>Strategically crafting token models that drive sustainability and growth in Web3 ecosystems.</p>
+  //       <ul className="list-disc pl-10 mt-2 text-xl">
+  //         <li>Initial Token Distribution Strategies</li>
+  //         <li>Incentive Mechanisms</li>
+  //         <li>Governance Models</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   image: section6,
+  //   title: "Web3 Marketing and Community Building",
+  //   description: (
+  //     <>
+  //       <p>Helping blockchain projects grow by engaging and nurturing vibrant communities worldwide.</p>
+  //       <ul className="list-disc pl-10 mt-2 text-xl">
+  //         <li>Social Media Campaigns</li>
+  //         <li>Ambassador Programs</li>
+  //         <li>Content Creation</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   image: section7,
+  //   title: "Blockchain/Web3 Event Management",
+  //   description: (
+  //     <>
+  //       <p>We organize world-class events that bring together the Web3 community, thought leaders, and innovators.</p>
+  //       <ul className="list-disc pl-10 mt-2 text-xl">
+  //         <li>Flagship Events: Host premier Web3 conferences, such as the Africa Edition 2024, with over 1000 attendees.</li>
+  //         <li>Workshops & Meetups: Curate technical and non-technical sessions to educate and inspire blockchain enthusiasts.</li>
+  //         <li>Customized Event Solutions: Tailor event management services for corporate clients, startups, and ecosystems.</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
 ];
 
 function SectionTwoAboutPage() {
@@ -137,59 +138,8 @@ function SectionTwoAboutPage() {
 
 return (
  
-//   <div className="flex justify-center items-center py-10 px-4 mt-10">
+
 <div className="flex justify-center items-center py-10 px-4 sm:px-6 md:px-10 lg:px-16 mt-10">
-      {/* <div className="flex flex-col lg:flex-row justify-center items-center gap-6 w-full max-w-7xl"> */}
-        {/* Left Side */}
-        {/* <div className="flex flex-col gap-2"> */}
-           
-
-          {/* Carousel Items */}
-          {/* {visibleSections.map((item, index) => {
-            const realIndex = startIndex + index;
-            return (
-              <div
-                key={realIndex}
-                onClick={() => setSelectedIndex(realIndex)}
-                className={`flex gap-3 items-center bg-[#5A487A] rounded-3xl py-3 px-4 cursor-pointer ${
-                  selectedIndex === realIndex ? 'border-2 border-white' : ''
-                }`}
-              >
-                <img
-                  src={item.image}
-                  alt=""
-                  className="w-24 h-20 sm:w-32 sm:h-24 md:w-36 md:h-28 lg:w-40 lg:h-30 object-cover"
-                />
-                <div>
-                <p className="text-md sm:text-lg md:text-xl font-bold">{item.title}</p>
-                <p className="text-md sm:text-lg md:text-xl font-bold">{item.title1}</p>
-                </div>
-              </div>
-            );
-          })}
-
-          
-        </div> */}
-
-        {/* Right Side */}
-        {/* <div className="flex flex-col justify-between items-center gap-y-6 w-full lg:w-2/3">
-        
-          <div className="px-2 sm:px-4 lg:px-0">
-            <p className="text-lg sm:text-xl md:text-2xl font-normal text-center lg:text-left">
-            Lorem ipsum dolor sit amet consectetur. Dui tincidunt tortor maecenas laoreet consequat morbi pellentesque 
-            enim. Scelerisque ultrices morbi porttitor leo proin dignissim est. Amet et sapien volutpat eu aliquam. Accumsan varius consectetur at suspendisse. Felis pharetra pulvinar aenean suspendisse velit orci. Elit imperdiet adipiscing lorem quam donec nulla integer faucibus. Faucibus eleifend mauris malesuada lobortis venenatis. Arcu morbi nunc ac sed nascetur id sed ipsum. Sed ut at tortor at. Massa dignissim ornare mattis congue neque vivamus sit facilisi at. Egestas faucibus est aliquam massa fringilla ultrices amet risus in. Porttitor suscipit eget duis ut sed amet commodo magnis. Eget aliquet pharetra aliquam nullam sit mauris aliquet amet tempor. Ut laoreet amet sed pharetra.
-
-    Nisl justo leo porta auctor in nunc tellus. Amet cursus tortor consectetur felis eu urna massa. Adipiscing amet eu 
-    sed lectus massa. Ut mauris congue mi in. Feugiat pellentesque ipsum ipsum enim sed vel pulvinar eget tincidunt.
-    Porta ligula lacinia ullamcorper eget risus blandit quis. Duis venenatis a fusce vitae tincidunt magnis. 
-    Tortor euismod duis in facilisi ut pretium neque.
-    
-    
-            </p>
-           
-          </div>
-        </div> */}
-      {/* </div> */}
 
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 w-full max-w-7xl">
     
@@ -212,7 +162,7 @@ return (
             />
             <div>
               <p className="text-base sm:text-lg md:text-xl font-bold text-white">{item.title}</p>
-              <p className="text-base sm:text-lg md:text-xl font-bold text-white">{item.title1}</p>
+              <p className="text-base sm:text-lg md:text-xl font-light text-white">{item.title1}</p>
             </div>
           </div>
         );
@@ -222,23 +172,14 @@ return (
     {/* Right Side */}
     <div className="w-full lg:w-2/3 flex flex-col justify-center items-center lg:items-start">
       <div className="px-2 sm:px-4 lg:px-0 max-w-full">
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-100 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur. Dui tincidunt tortor maecenas laoreet consequat morbi pellentesque 
-          enim. Scelerisque ultrices morbi porttitor leo proin dignissim est. Amet et sapien volutpat eu aliquam. 
-          Accumsan varius consectetur at suspendisse. Felis pharetra pulvinar aenean suspendisse velit orci. 
-          Elit imperdiet adipiscing lorem quam donec nulla integer faucibus. Faucibus eleifend mauris malesuada 
-          lobortis venenatis. Arcu morbi nunc ac sed nascetur id sed ipsum. Sed ut at tortor at. Massa dignissim 
-          ornare mattis congue neque vivamus sit facilisi at. Egestas faucibus est aliquam massa fringilla ultrices 
-          amet risus in. Porttitor suscipit eget duis ut sed amet commodo magnis. Eget aliquet pharetra aliquam 
-          nullam sit mauris aliquet amet tempor. Ut laoreet amet sed pharetra.
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-100 leading-relaxed">
+  The Web3 Global Conference is more than just a gathering—it's a catalyst for transformation. In a world where decentralized technologies are redefining how we connect, transact, and innovate, this event brings together pioneers, visionaries, and builders to explore the future of the internet. From blockchain to smart contracts, from DAOs to decentralized finance, the pace of advancement in Web3 is opening doors to new possibilities once thought unimaginable.
 
-          <br /><br />
+  <br /><br />
 
-          Nisl justo leo porta auctor in nunc tellus. Amet cursus tortor consectetur felis eu urna massa. 
-          Adipiscing amet eu sed lectus massa. Ut mauris congue mi in. Feugiat pellentesque ipsum ipsum enim sed 
-          vel pulvinar eget tincidunt. Porta ligula lacinia ullamcorper eget risus blandit quis. Duis venenatis 
-          a fusce vitae tincidunt magnis. Tortor euismod duis in facilisi ut pretium neque.
-        </p>
+  This conference is a hub of opportunity—where global leaders share insights, emerging startups find their voice, and new partnerships are forged. As trends shift away from centralized models toward inclusive, trustless systems, we stand at the edge of a digital revolution. Whether you're a developer, investor, creator, or curious learner, the Web3 Global Conference is your launchpad into the next evolution of the web. Join us in shaping a future driven by transparency, empowerment, and innovation.
+</p>
+
       </div>
     </div>
 
