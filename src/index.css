@@ -10,6 +10,17 @@
     background-position: center;
   }
 
+
+  .bg-aboutHero-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('./assets/aboutHero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 900px; */
+  }
+
+  
+
   .widthMargin {
     margin: 0 30px;
     /* width: 100%; */
@@ -19,12 +30,14 @@
   .worldLogo1 {
     background-image: url('./assets/world.png');
     background-repeat: no-repeat;
+    background-size: contain;
     left: -30px;
   }
   
   .worldLogo {
   background-image: url('./assets/imageNew.png');
   background-size: cover;
+  /* background-size: contain; */
   background-position: center;
   background-repeat: no-repeat; 
   position: absolute;  
@@ -44,6 +57,21 @@
 
 .bg-section1 {
     background-image: url('./assets/bg-section1.png');
+    /* background-image: url('./assets/blockchain2.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-section2 {
+    background-image: url('./assets/coin2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-section3 {
+    background-image: url('./assets/coin2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
