@@ -17,7 +17,7 @@ const Navbar = ({ className }) => {
       </div>
 
       {/* Large Screen Nav */}
-      <div className="hidden md:flex space-x-8 text-2xl ">
+      <div className="hidden md:flex md:gap-3 2xl:gap-8 text-2xl ">
         <Link to="/" className="hover:text-purple-300 cursor-pointer">Home</Link>
         <Link to="/about" className="hover:text-purple-300">About</Link>
         <Link to="/sponsor" className="hover:text-purple-300">Sponsor</Link>

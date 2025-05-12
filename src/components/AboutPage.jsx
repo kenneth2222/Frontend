@@ -21,9 +21,9 @@ const AboutPage = () => {
         {/* <Navbar className="text-[#ffff] font-bold"/> */}
 
     {/* Hero Section  */}
-      <div className="flex flex-col justify-center  min-h-[50vh] 2xl:h-[100vh] items-center bg-aboutHero-image relative">
-      <Navbar className="text-[#ffff] font-bold lg:absolute -translate-y-50 md:-translate-y-50 lg:-translate-y-90 2xl:-translate-y-95 gap-50 md:gap-90 2xl:gap-209"/>
-      <div className=" flex flex-col lg:max-w-2xl text-black bg-white lg:py-9 lg:px-9 px-3 py-3 rounded-3xl absolute translate-y-10 md:-translate-y-0 lg:-translate-y-0 2xl:translate-y-10 lg:-translate-x-50 2xl:-translate-x-94 mx-10">
+      <div className="flex flex-col justify-center  min-h-[50vh] 2xl:h-[100vh] items-center bg-aboutHero-image relative mb-7">
+      <Navbar className="text-[#ffff] font-bold lg:absolute -translate-y-35 md:-translate-y-50 lg:-translate-y-90 2xl:-translate-y-95 gap-50 md:gap-90 2xl:gap-209"/>
+      <div className=" flex flex-col lg:max-w-2xl text-black bg-white lg:py-9 lg:px-9 px-3 py-3 rounded-3xl absolute translate-y-15 md:-translate-y-0 lg:-translate-y-0 2xl:translate-y-10 lg:-translate-x-50 2xl:-translate-x-94 mb-15">
         <h1 className="text-2xl lg:text-4xl font-bold mb-7.5 ">About Us</h1>
         <p className="mb-4.5 text-sm lg:text-xl">Web3 Global Conference LLC is a pioneering blockchain ecosystem company, incorporated in the USA, 
             dedicated to advancing Web3 adoption worldwide. Our mission is to empower businesses and individuals with 
@@ -34,7 +34,7 @@ const AboutPage = () => {
             </p>
       </div>
     
-      <div className="hidden md:block  lg:block lg:max-w-2xl absolute translate-y-30 md:translate-x-55 md:translate-y-35 lg:-translate-y-0 2xl:translate-y-40 lg:translate-x-100 2xl:translate-x-154">
+      <div className="hidden md:block lg:block lg:max-w-2xl absolute translate-y-30 md:translate-x-55 md:translate-y-35 lg:-translate-y-0 2xl:translate-y-40 lg:translate-x-80 2xl:translate-x-154">
   <img src={social} alt="icon" className="md:w-50 md:h-10 lg:w-70 lg:h-15"/>
 </div>
 
