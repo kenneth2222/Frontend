@@ -43,7 +43,7 @@ const Navbar = ({ className }) => {
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-purple-300">About</Link>
           <Link to="/sponsor" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Sponsor</Link>
           <Link to="/events" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Events</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Contact</Link>
+          {/* <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Contact</Link> */}
         </div>
       )}
     </nav>
