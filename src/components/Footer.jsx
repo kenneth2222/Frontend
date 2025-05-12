@@ -40,8 +40,8 @@ const Footer = ({ className }) => {
     <footer className={`md:px-2 ${className}`}>
       <div className="lg:px-16 h-50 mx-5 lg:flex lg:flex-row flex-col justify-between items-center ">
         {/* This is only visible in small screens */}
-        <div className="sm:flex md:flex lg:hidden w-90 lg:h-40 lg:w-120 mt-10 mb-10 mx-0 px-0 flex-col justify-center items-center gap-2 md:translate-x-90 md:-mb-15">
-          <div className="bg-[#F5E9DE] h-15 w-90 lg:h-15 lg:w-140 rounded-3xl flex lg:justify-between items-center px-6">
+        <div className="sm:flex md:flex lg:hidden w-90 lg:h-40 lg:w-120 mt-0 mb-10 mx-0 px-0 flex-col justify-center items-center gap-2 md:translate-x-90 md:-mb-15">
+          <div className="bg-[#F5E9DE] h-15 w-80 lg:h-15 lg:w-140 rounded-3xl flex lg:justify-between items-center px-6">
             <input
               type="email"
               placeholder="Enter your email"
@@ -51,7 +51,7 @@ const Footer = ({ className }) => {
             />
             <button
               onClick={handleSubscribe}
-              className="bg-black text-white h-10 px-3 rounded-3xl lg:flex justify-center items-center"
+              className="bg-black text-white h-10 px-3 rounded-3xl lg:flex justify-center items-center -translate-x-7"
             >
               Subscribe
             </button>
@@ -116,6 +116,23 @@ const Footer = ({ className }) => {
               Subscribe
             </button>
           </div>
+
+{/* <div className="bg-[#F5E9DE] h-15 w-full sm:w-[30%] md:w-[70%] lg:w-[80%] 2xl:w-[70%] rounded-3xl flex flex-col sm:flex-row items-center gap-4 px-4 sm:px-6">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    className="bg-transparent outline-none text-black text-base sm:text-lg w-full sm:flex-1"
+  />
+  <button
+    onClick={handleSubscribe}
+    className="bg-black text-white h-10 px-6 rounded-3xl w-full sm:w-auto"
+  >
+    Subscribe
+  </button>
+</div> */}
+
         </div>
       </div>
     </footer>
