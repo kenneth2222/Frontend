@@ -8,7 +8,7 @@ const Navbar = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`flex justify-between items-center py-4 px-8 lg:px-16 widthMargin ${className} relative z-[100]`}>
+    <nav className={`flex justify-between items-center py-4 px-8 lg:px-16 widthMargin ${className} relative z-[100] md:-translate-y-10 lg:-translate-y-1`}>
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Link to="/">
@@ -17,7 +17,7 @@ const Navbar = ({ className }) => {
       </div>
 
       {/* Large Screen Nav */}
-      <div className="hidden lg:flex space-x-8 text-2xl ">
+      <div className="hidden md:flex space-x-8 text-2xl ">
         <Link to="/" className="hover:text-purple-300 cursor-pointer">Home</Link>
         <Link to="/about" className="hover:text-purple-300">About</Link>
         <Link to="/sponsor" className="hover:text-purple-300">Sponsor</Link>
@@ -26,7 +26,7 @@ const Navbar = ({ className }) => {
       </div>
 
       {/* Mobile Menu Icon */}
-      <div className="lg:hidden z-50 ">
+      <div className="md:hidden z-50 md:-translate-y-2">
         <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
           {isOpen ? (
             <HiX size={28} className="text-white" />
@@ -38,7 +38,7 @@ const Navbar = ({ className }) => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 right-8 w-3/4 bg-white text-black shadow-md px-6 py-4 flex flex-col gap-4 md:text-xl z-50 lg:hidden">
+        <div className="absolute top-16 right-8 w-3/4 bg-white text-black shadow-md px-6 py-4 flex flex-col gap-4 md:text-xl z-50 md:hidden">
           <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-purple-300">About</Link>
           <Link to="/sponsor" onClick={() => setIsOpen(false)} className="hover:text-purple-300">Sponsor</Link>

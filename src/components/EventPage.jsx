@@ -35,9 +35,9 @@ const AboutPage = () => {
 
     {/* Title and Description */}
     <div className="text-black text-center md:text-left">
-      <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-5 lg:text-4xl">Web 3 Global Conference</p>
-      <p className="text-sm md:text-lg lg:text-xl font-normal">
-        Uniting leading experts from diverse industries on a global scale
+      <p className="text-2xl md:text-3xl font-bold mb-3 md:mb-5 lg:text-6xl">AI/Blockchain:</p>
+      <p className="text-sm md:text-lg lg:text-2xl font-normal">
+        The Dawn of Decentralized Intelligence
       </p>
     </div>
 

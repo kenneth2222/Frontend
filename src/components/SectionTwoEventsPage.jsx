@@ -173,11 +173,17 @@ return (
     <div className="w-full lg:w-2/3 flex flex-col justify-center items-center lg:items-start">
       <div className="px-2 sm:px-4 lg:px-0 max-w-full">
       <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-100 leading-relaxed">
-  The Web3 Global Conference is more than just a gathering—it's a catalyst for transformation. In a world where decentralized technologies are redefining how we connect, transact, and innovate, this event brings together pioneers, visionaries, and builders to explore the future of the internet. From blockchain to smart contracts, from DAOs to decentralized finance, the pace of advancement in Web3 is opening doors to new possibilities once thought unimaginable.
+  The Web3 Global Conference is more than just a gathering—it's a catalyst for transformation. In a world where decentralized technologies are 
+  redefining how we connect, transact, and innovate, this event brings together pioneers, visionaries, and builders to explore the future of the 
+  internet. From blockchain to smart contracts, from DAOs to decentralized finance, the pace of advancement in Web3 is opening doors to new 
+  possibilities once thought unimaginable.
 
   <br /><br />
 
-  This conference is a hub of opportunity—where global leaders share insights, emerging startups find their voice, and new partnerships are forged. As trends shift away from centralized models toward inclusive, trustless systems, we stand at the edge of a digital revolution. Whether you're a developer, investor, creator, or curious learner, the Web3 Global Conference is your launchpad into the next evolution of the web. Join us in shaping a future driven by transparency, empowerment, and innovation.
+  This conference is a hub of opportunity—where global leaders share insights, emerging startups find their voice, and new partnerships are forged. 
+  As trends shift away from centralized models toward inclusive, trustless systems, we stand at the edge of a digital revolution. Whether you're a 
+  developer, investor, creator, or curious learner, the Web3 Global Conference is your launchpad into the next evolution of the web. Join us in 
+  shaping a future driven by transparency, empowerment, and innovation.
 </p>
 
       </div>
